@@ -28,3 +28,16 @@ Users input a list of available ingredients, and the system generates tailored r
 * LangChain's RetrievalQA chain structure is used to manage retrieval and answer generation.
 #### User Interaction
 * A simple function interface for users to input ingredients in a comma-separated format and get a generated recipe.
+
+## Quickstart
+#### Prerequisites
+Make sure you have the following installed:
+* langchain
+* huggingface_hub
+* faiss-cpu
+* sentence-transformers
+* transformers
+* torch
+* pandas
+* numpy
+* gradio
