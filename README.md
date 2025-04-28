@@ -1,4 +1,4 @@
-# AI Recipe Generator Model using Retrieval-Augmented Generation (RAG)
+# AI Recipe Generator using Retrieval-Augmented Generation (RAG)
 
 ## Overview
 This project implements an AI-powered Recipe Generator that produces customized recipes based on user-input ingredients. It leverages Retrieval-Augmented Generation (RAG) for enhanced contextual relevance, using:
