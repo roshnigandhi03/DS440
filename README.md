@@ -16,15 +16,15 @@ Users input a list of available ingredients, and the system generates tailored r
 * Deployable in a lightweight environment like Google Colab
 
 ## Architecture
-### Data Preparation
+#### Data Preparation
 * A large .csv dataset of recipes is loaded and preprocessed
 * Text data is split into chunks using LangChain’s ```CharacterTextSplitter```.
-### Embedding and Indexing
+#### Embedding and Indexing
 * Embeddings are generated using **HuggingFace sentence-transformers**.
 * **FAISS** is used to index the recipe embeddings for efficient retrieval.
-### RAG Pipeline
+#### RAG Pipeline
 * For a given query (list of ingredients), relevant chunks are retrieved from FAISS.
 * Retrieved context is fed to the Gemma-3-1b-it model using a prompt template.
 * LangChain's RetrievalQA chain structure is used to manage retrieval and answer generation.
-### User Interaction
+#### User Interaction
 * A simple function interface for users to input ingredients in a comma-separated format and get a generated recipe.
